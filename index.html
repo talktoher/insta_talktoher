@@ -7,11 +7,44 @@
     <body>
         <main>
             <div>
-                <img src="images/phone.png" alt="PhoneImage" title="Phone Image" />
+                <img 
+                    src="images/phone.png" 
+                    alt="Phone Image" 
+                    title="Phone Image" 
+                    class="login__phone-image"
+                />
             </div>
-            <section>
+            <section class="login__column">
+                <div class="login_section login__sing-in">
+                    <img 
+                        src="images/logo.png"
+                        alt="logo"
+                        title="logo"
+                        class="login-logo"
+                    />
+                    <form method="GET" action="feed.html">
+                        <input 
+                            type="text" 
+                            name="username"
+                            placeholder="username"
+                            required
+                        />
+                        <input 
+                            type="password" 
+                            name="password"
+                            placeholder="Password"
+                            required
+                        />
+                        <input 
+                            type="submit" 
+                            value="LOG IN">
+                    </form>
+                </div>
+                <div class="login_section login__sign_up">
+                </div>
+                <div class="login_section login__section--transparent loing__app">
+                </div>
             </section>
-
         </main>
     </body>
 </html>
