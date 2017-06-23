@@ -1,57 +1,105 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Profile  | Insta_talktoher</title>
+        <title>Profile | Instaclone</title>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
     <body>
-	    <nav class="navigation">
-	    	<a href="feed.html">
-	    		<img 
-	    			src="images/navLogo.png" 
-	    			alt="logo" 
-	    			title="logo" 
-	    			class="navigation__logo"
-	    		/>
-	    	</a>
-	    	<div class="navigation__search-container">
-	    		<i class="fa fa-search"></i>
-	    		<input type="text" placeholder="Search">
-	    	</div>
-	    	<div class="navigation__icons">
-	    		<a href="explore.html" class="navigation__link">
-	    			<i class="fa fa-compass"></i>
-	    		</a>
-	    		<a href="#" class="navigation__link">
-	    			<i class="fa fa-heart-o"></i>
-	    		</a>
-	    		<a href="profile.html" class="navigation__link">
-	    			<i class="fa fa-user-o"></i>
-	    		</a>
-	    	</div>
-	    </nav>
-
-	    <main>
-	    	Profile 
-	    </main>
-	    
-    	<footer class="footer">
-            <nav class="footer_nav">
-                <ul class="footer_list">
-                       <li class="footer__list-item"><a href="#" class="footer__link">ABOUT US</a></li>
-                        <li class="footer__list-item"><a href="#" class="footer__link">SUPPORT</a></li>
-                        <li class="footer__list-item"><a href="#" class="footer__link">BLOG</a></li>
-                        <li class="footer__list-item"><a href="#" class="footer__link">PRESS</a></li>
-                        <li class="footer__list-item"><a href="#" class="footer__link">API</a></li>
-                        <li class="footer__list-item"><a href="#" class="footer__link">JOBS</a></li>
-                        <li class="footer__list-item"><a href="#" class="footer__link">PRIVACY</a></li>
-                        <li class="footer__list-item"><a href="#" class="footer__link">TERMS</a><</li>
-                        <li class="footer__list-item"><a href="#" class="footer__link">DIRECTORY</a></li>
-                        <li class="footer__list-item"><a href="#" class="footer__link">LANGUAGE</a></li>
+        <nav class="navigation">
+            <a href="feed.html">
+                <img 
+                    src="images/navLogo.png"
+                    alt="logo"
+                    title="logo"
+                    class="navigation__logo"
+                />
+            </a>
+            <div class="navigation__search-container">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="navigation__icons">
+                <a href="explore.html" class="navigation__link">
+                    <i class="fa fa-compass"></i>
+                </a>
+                <a href="#" class="navigation__link">
+                    <i class="fa fa-heart-o"></i>
+                </a>
+                <a href="profile.html" class="navigation__link">
+                    <i class="fa fa-user-o"></i>
+                </a>
+            </div>
+        </nav>
+        <main class="profile-container">
+            <section class="profile">
+                <header class="profile__header">
+                    <div class="profile__avatar-container">
+                        <img 
+                            src="images/avatar.jpg"
+                            class="profile__avatar"
+                        />
+                    </div>
+                    <div class="profile__info">
+                        <div class="profile__name">
+                            <!-- complete this -->
+                            <h1 class="profile__name-h">talktoher</h1>
+                            <a class="profile_editlink" href="edit-profile.html">Edit Profile</a>
+                            <i class="fa fa-cog"></i>
+                        </div>
+                        <ul class="profile__numbers">
+                        	<!-- complete this -->
+                            <li class="profile_number">
+                            	<span class="number__posts">1</span> posts
+                            </li>
+                            <li class="profile_followers">
+                            	<span class="number__posts">15</span> followers
+                            </li> 
+                            <li class="profile_number">
+                            	<span class="number__posts">124</span> following
+                            </li> 
+                        </ul>
+                        <div class="profile__bio">
+                            <span class="profile__full-name">Nicolás Serrano Arévalo</span>
+                            <p class="profile__full-bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit rerum consequuntur aperiam, dicta delectus nihil voluptas explicabo sapiente quisquam. Eius ipsam asperiores excepturi maiores, atque voluptatum sed fuga esse molestiae.</p>
+                            <a href="http://serranoarevalo.com" class="profile__link">serranoarevalo.com</a>
+                        </div>
+                    </div>
+                </header>
+                <div class="profile__pictures">
+                    <a class="profile-picture">
+                        <img
+                            src="images/feedPhoto.jpg"
+                            class="profile-picture__picture"
+                        />
+                        <div class="profile-picture__overlay">
+                            <span class="profile-picture__number">
+                                <i class="fa fa-heart"></i> 450
+                            </span>
+                            <span class="profile-picture__number">
+                                <i class="fa fa-comment"></i> 39
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="#" class="footer__link">about us</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">support</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">blog</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">press</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">api</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">jobs</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">privacy</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">terms</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">directory</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">language</a></li>
                 </ul>
-            </nav>            
-            <span class="footer__copyright">© 2017 INSTAGRAM</span>
+            </nav>
+            <span class="footer__copyright">© 2017 instagram</span>
         </footer>
     </body>
 </html>
