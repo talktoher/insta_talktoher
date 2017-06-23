@@ -17,32 +17,68 @@
             <section class="login__column">
                 <div class="login_section login__sing-in">
                     <img 
-                        src="images/logo.png"
+                        src="images/logo.png"  
                         alt="logo"
                         title="logo"
                         class="login-logo"
                     />
-                    <form method="GET" action="feed.html">
-                        <input 
-                            type="text" 
-                            name="username"
-                            placeholder="username"
-                            required
-                        />
-                        <input 
-                            type="password" 
-                            name="password"
-                            placeholder="Password"
-                            required
-                        />
-                        <input 
-                            type="submit" 
-                            value="LOG IN">
-                    </form>
+                    <form method="GET" action="feed.html" class="login__form">
+                        <div class="login__input-container">
+                            <input 
+                                type="text" 
+                                name="username"
+                                placeholder="username"
+                                required   
+                                class="login__input" 
+                            />
+                        </div>
+                            <!-- name : 전송방식 GET일때 해당 항몫값이 무엇인지 URL에 물고 넘겨줌 -->
+                            <!-- required : 입력 필수값 체크-->
+                        <div class="login__input-container">
+                            <input 
+                                type="password" 
+                                name="password"
+                                placeholder="Password"
+                                required
+                                class="login__input" 
+                            />
+                        </div>
+                        <div class="login__input-container">
+                            <input 
+                                type="submit" 
+                                value="LOG IN"
+                                class="login__input login__input--btn" 
+                            />
+                        </div>
+                            <!--value : 확인 버튼에 출력되는 텍스트 -->
+                    </form>                   
                 </div>
                 <div class="login_section login__sign_up">
+                    <span class="login__text">
+                        Don't have an account? 
+                        <a href="#" class+"login__link">
+                            SIGN UP
+                        </a>
+                    </span>
                 </div>
                 <div class="login_section login__section--transparent loing__app">
+                    <span class="login__text">
+                        Get the app.
+                    </span>
+                    <div class="login__appstores">
+                        <img 
+                            src="images/ios.png"
+                            alt="iOS"
+                            title="Get the app!"
+                            class="login__appstore"
+                        />
+                        <img 
+                            src="images/android.png"
+                            alt="Android"
+                            title="Get the app!"
+                            class="login__appstore"
+                        />
+                    </div>
                 </div>
             </section>
         </main>
