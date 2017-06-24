@@ -35,6 +35,7 @@
 
 .photo__file{
     max-width: 100%;
+    min-width: 100%;
 }
 
 .photo__info{
@@ -53,7 +54,7 @@
 .photo__likes{
     font-weight: 600;
     margin-bottom: 10px;
-    display: block;
+    display: block; /*span이어서 margin을 잡지 못하는 경우에 세로 간격을 주기 위해 사용*/
 }
 
 .photo__comment{
