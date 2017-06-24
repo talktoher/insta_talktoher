@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Box Model</title>
+	<style>
+		html{
+			height: 100%;
+		}
+		body{
+			background: red;
+			height: 100%;
+			margin: 0;  /*구글 크롬에서 자동으로 margin이 잡혀서 0을 넣어줘야 함*/
+		}
+		.parent{
+			background-color: black;
+			padding: 30px;
+			height: 100%;
+			width: 100%;
+			box-sizing: border-box;
+			display: flex;
+			justify-content: space-between;
+			align-items: stretch;
+		}
+		.child{
+			background-color: pink;
+			width: 200px;
+			height: 200px;
+			border: 1px solid red;
+			border-top-style: dashed;
+			border-bottom-color: green;
+			border-bottom-width: 4px;
+		}
+		#one{
+			align-self: flex-start;
+		}
+		#two{
+			align-self: center;
+		}
+		#three{
+			align-self: flex-end;
+		}
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="child" id="one">111
+		</div>
+		<div class="child" id="two">222
+		</div>
+		<div class="child" id="three">333
+		</div>
+
+	</div>
+
+</body>
+</html>
