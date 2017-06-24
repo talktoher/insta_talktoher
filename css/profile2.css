@@ -32,7 +32,7 @@
     color:black;
     padding:5px 20px;
     border-radius: 3px;
-    transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; /*모든 동작시 0.5초에 걸쳐 서서히...*/
 }
 
 .profile__button:hover{
@@ -48,16 +48,6 @@
     width:152px;
     height: 152px;
     border-radius: 50%;
-    animation: 3s rotate-avatar infinite linear;
-}
-
-@keyframes rotate-avatar{
-    from{
-        transform: rotate(0turn);
-    }
-    to{
-        transform: rotate(1turn)
-    }
 }
 
 .profile__name,
@@ -103,7 +93,7 @@
     justify-content: center;
     color:white;
     opacity: 0;
-    transition:opacity .5s ease-in-out;
+    transition:opacity .5s ease-in-out; /*capacity 있는 경우 0.5초에 걸쳐 서서히...*/
 }
 
 .profile-picture:hover .profile-picture__overlay{
@@ -112,12 +102,4 @@
 
 .profile-picture__number:first-child{
     margin-right: 20px;
-}
-
-#cog{
-    transition: all .5s ease-in-out;
-}
-
-#cog:hover{
-    transform: rotate(1turn);
 }
