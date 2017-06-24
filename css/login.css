@@ -44,7 +44,7 @@
 
 .login__form{
     margin-top: 10px;
-    width: 100%;
+    width: 100%; /*username, password, button의 폭이 100인데...... 이만큼이 100인지 우찌알았노.
 }
 
 .login__input{
