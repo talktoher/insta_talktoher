@@ -13,3 +13,8 @@ a{
 input:focus{
     outline: none; /*마우스 포커스 가면 파란색으로 테두리 표기되는 것 해지를 위해 공통 추가*/
 }
+
+
+.u-fat-text{
+    font-weight: 600;
+}
