@@ -7,8 +7,10 @@
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
-        <main>
+    <body class="no-padding"> 
+    <!-- global.css에서 passing-top을 정의해 놓았으므로, 해당 페이지는 제외시키기 위해 class 추가 -->
+        <main class="login">
+        <!-- 페이지 내의 위치를 정리해 주기 위해 해당 class 추가 -->
             <div>
                 <img 
                     src="images/phone.png" 
@@ -18,12 +20,12 @@
                 />
             </div>
             <section class="login__column">
-                <div class="login_section login__sing-in">
+                <div class="login__section login__sign-in">
                     <img 
                         src="images/logo.png"  
                         alt="logo"
                         title="logo"
-                        class="login-logo"
+                        class="login__logo"
                     />
                     <form method="GET" action="feed.html" class="login__form">
                         <div class="login__input-container">
@@ -35,7 +37,7 @@
                                 class="login__input" 
                             />
                         </div>
-                            <!-- name : 전송방식 GET일때 해당 항몫값이 무엇인지 URL에 물고 넘겨줌 -->
+                            <!-- name : 전송방식 GET일때 해당 항몫값이 무엇인지 URL에 물고 넘겨줌. github는 GET으로로만 해야 함-->
                             <!-- required : 입력 필수값 체크-->
                         <div class="login__input-container">
                             <input 
@@ -56,12 +58,12 @@
                         </div>
                             <!--value : 확인 버튼에 출력되는 텍스트 -->
                     </form>
-                    <span class="login_dividor">or</span>
+                    <span class="login__divider">or</span>
                     <a class="login__fb-link" href="#">
                         <i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i> Log in with Facebook
                     </a>
                 </div>
-                <div class="login_section login__sign_up">
+                <div class="login__section login__sign_up">
                     <span class="login__text">
                         Don't have an account? 
                         <a href="#" class="login__link">

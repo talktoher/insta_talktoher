@@ -1,0 +1,96 @@
+.no-padding{
+    padding:0; /* global.css에서 공통으로 140을 띄어 놓아 로그인 페이지는 이를 먹지 않게 하기 위해 정의*/
+}
+
+.login{
+    width: 73%; /*전체 1000px 중 73%에만 해당하게 배치하기 위함*/
+    margin:0 auto;
+    margin-top: 50px;
+    max-width: 1000px;
+    display: flex; /*폰 이미지와, 로그인 영역을 배치하기 위해 정의*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.login__column{
+    width:50%; /*73%의 50%만 해당하도록 하기 위함*/
+}
+
+
+.login__column:last-child{
+    margin-left: 30px; /*폰이미지와의 여백 추가 */
+}
+
+.login__section{
+    background-color: white;
+    border: 1px solid rgba(0,0,0,.0975);
+    margin-bottom: 10px;
+}
+
+.login__sign-in{
+    display: flex;
+    flex-direction: column; /*column 방향으로 정렬의 방향을 바꿔 줌*/
+    align-items: center;
+    padding:0 40px;
+
+}
+
+
+.login__logo{
+    margin-top: 30px;
+}
+
+
+.login__form{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.login__input{
+    height: 35px;
+    width: 100%;
+    border:1px solid rgba(0,0,0,.0975);
+    border-radius: 5px;  /*box의 라운딩 효과*/
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+
+.login__input:first-child{
+    margin-bottom: 10px;
+}
+
+.login__input--btn{
+    border:0;
+    color:white;
+    font-weight: 600;
+    background-color: #3897F0;
+}
+
+.login__input-container{
+    position: relative;  /*forget단어를 password의 inputbox 안으로 묶기 위해 정의*/
+}
+
+.login__form-link{
+    position: absolute;
+    top:10px;
+    right:10px;
+    color:#003569;
+}
+
+
+.login__divider{ 
+    margin-bottom: 25px;
+    margin-top: 15px;
+    text-transform: uppercase; 
+    font-weight: 600;
+    color:#999;
+
+}
+
+.login__fb-link{
+    margin-bottom: 45px;
+    color:#385185;
+}

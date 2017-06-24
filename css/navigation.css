@@ -36,7 +36,7 @@
 }
 
 .navigation__search-container input:focus{
-    outline: none;
+    outline: none; /*마우스 오버시 테두리 파란색으로 바뀌는 표기 되지 않도록 처리*/
     color: red;
 }
 
