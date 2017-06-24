@@ -48,7 +48,7 @@
     width:152px;
     height: 152px;
     border-radius: 50%;
-    animation: 3s rotate-avatar infinite linear;
+    animation: 10s rotate-avatar infinite linear;
 }
 
 @keyframes rotate-avatar{
