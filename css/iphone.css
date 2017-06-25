@@ -1,0 +1,50 @@
+@media only screen
+    and (min-width: 320px)
+    and (max-width: 650px){
+
+    	/* Globals */
+        body{
+            padding-top: calc(80px); /*모바일의 경우 상단 60px이 없어서 삭제함*/
+            font-size: 14px;
+        }
+
+    	        /* Navigation */
+        .navigation{
+            padding:0 10px;
+        }
+        .navigation__search-container{
+            display: none; /*모바일의 경우, 검색창의 flex를 해제하기 위해 추가*/
+        }
+        .navigation__icons{
+            display: flex; /*모바일의 경우 margin-right?를 주어 간격이 고정된 것을 해제하기 위해 추가*/
+        }
+
+
+    	/* Photo */
+        .photo{
+            width:100%; /*모바일의 경우, 브라우저의 일부가 아니라 width 100%로 나오게 하기 위해 추가*/
+            border:none;
+            margin-bottom: 20px;
+        }
+        .photo,
+        .photo *{
+            background-color: transparent; 
+        }
+        .photo__time-ago{
+            border:none;
+        }
+        .photo__add-comment-container{
+            display: none; /*모바일의 경우 코맨트 영역이 출력안됨 */
+        }
+
+    	/* Footer */
+        .footer{
+            justify-content: center; /*푸터 메뉴 중앙정렬*/
+        }
+        .footer__list{
+            justify-content: center; /*저작권 표기 중앙정렬*/
+        }
+        .footer__list-item{
+            margin-bottom: 15px; /*중앙 정렬 푸터 메뉴, 저작권 표기 행간 조정 */
+        }
+    }

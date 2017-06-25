@@ -7,6 +7,7 @@
     display: flex; /*메뉴와 copyright 부분을 배치하기 위해 정의*/
     align-items: center;
     justify-content: space-between; /*메뉴와 copyright 부분을 배치하기 위해 정의*/
+    flex-wrap: wrap; /*아이폰 사이즈 지원시, 가로 일렬로 고정배치된 것으로 해제하기 위해 추가*/
     text-transform: uppercase; /*소문자로 작성된 텍스트를 대문자로 변경*/
     font-size: 12px;
     font-weight: 700; /*구글 폰트 가져온 것 중 하나로 뚱뚱한 정도*/
@@ -14,6 +15,7 @@
 
 .footer__list{
     display: flex; /*가로 일렬 배치를 위해 정의*/
+    flex-wrap: wrap; /*아이폰 사이즈 지원시, 가로 일렬로 고정배치된 것으로 해제하기 위해 추가*/
 }
 
 .footer__list-item{
