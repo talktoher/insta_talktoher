@@ -91,21 +91,21 @@
 }
 
 .profile-picture{
-    width: 293px;
+    width: 32%; /*모바일 배치 고려하여 간격 따져서 %로 조정*/
     height: 293px;
     display: block;
     position: relative;
 }
 
 .profile-picture__picture{
-   width: 293px;
+   width: 100%; /*모바일 배치 고려하여 간격 따져서 %로 조정*/
    height: 293px;
 }
 
 .profile-picture__overlay{
     background-color: rgba(0,0,0,0.3);
     width: 293px;
-    height: 293px;
+    height: 100%; /*모바일 배치 고려하여 간격 따져서 %로 조정*/
     position: absolute;
     top:0;
     left:0;
@@ -131,6 +131,11 @@
 
 #cog:hover{
     transform: rotate(1turn);
+}
+
+.profile__pictures{
+    display: flex;
+    justify-content: space-between; /*한줄에 3개 배치를 위해 추가*/
 }
 
 /*.profile__name{
