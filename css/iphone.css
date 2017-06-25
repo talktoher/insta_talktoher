@@ -137,6 +137,57 @@
         }
 
 
+		/* Edit Profile */
+
+		.profile-form__header{
+			justify-content: center;
+			margin-right: 20%;
+		}
+
+		.edit-profile__form-row{
+			display: block;
+		}
+
+		.edit-profile__label{
+		    width:90%;
+		    font-weight: 600;
+		    font-size: 16px;
+		    text-align: center;
+		    padding-bottom: 10px;
+		}
+
+		.edit-profile__form-row input{
+			width: 90%;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		.edit-profile__form-row textarea{
+			width: 90%;
+			margin-bottom: 20px;
+		}
+
+		.edit-profile__form-row select{
+			width: 94%;
+			margin-bottom: 20px;
+		}
+
+		input[id="similar"]{
+			position: absolute;
+			left: 0;
+
+		}
+
+		label[for="similar"]{
+			width: 75%;
+			position: absolute;
+			margin-left: 20px;
+
+		}
+
+		input[type="submit"]{
+			margin-top: 30px;
+		}
 
 
 
