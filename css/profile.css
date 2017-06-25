@@ -99,12 +99,12 @@
 
 .profile-picture__picture{
    width: 100%; /*모바일 배치 고려하여 간격 따져서 %로 조정*/
-   height: 293px;
+   height: 100%;
 }
 
 .profile-picture__overlay{
     background-color: rgba(0,0,0,0.3);
-    width: 293px;
+    width: 100%;
     height: 100%; /*모바일 배치 고려하여 간격 따져서 %로 조정*/
     position: absolute;
     top:0;
