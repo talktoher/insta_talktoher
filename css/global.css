@@ -5,6 +5,23 @@ body{
     font-family: 'Open Sans', sans-serif; /*style.css에서 import한 폰트로 정의해 줌*/
 }
 
+
+main{
+    animation: .7s popIn linear;
+}
+
+@keyframes popIn{
+    from{
+        transform: translateY(12px);
+        opacity: 0;
+    }
+    to{
+        transform: none;
+        opacity: 1;
+    }
+}
+
+
 a{
     text-decoration: none;  /*모든 링크의 밑줄,색상변경 표기를 빼도록 함*/
 }
