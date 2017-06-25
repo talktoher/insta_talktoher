@@ -56,6 +56,9 @@
             border-bottom:0;
         }
 
+        .heart-red{
+            color: red;
+        }
 
         /* Login */
         .login{
